@@ -5,8 +5,28 @@ import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { CardMedia } from "@mui/material";
+import axios  from "axios";
+import { useEffect } from "react";
 
 const News = () => {
+
+
+
+  var url = 'https://newsapi.org/v2/everything?' +
+          'q=Apple&' +
+          'from=2022-05-08&' +
+          'sortBy=popularity&' +
+          'apiKey=d00d9a4dc6a7453bb673086906f424c2';
+   const getNews = async () => {
+    const { data } = await axios.get(url);
+    console.log(data.articles);
+    return data.articles;
+  };
+
+  useEffect(() => {
+    getNews();
+  }, []);
+
   return (
     <Box
       display="flex"
