@@ -1,5 +1,5 @@
 # Redux Nedir, Nasil Uygulanir Projesi
-
+- ![Proje](./media/newapi_project_view.png)
 ## `Kurulum`
 
 ```
@@ -22,7 +22,7 @@ npm install veya yarn install
 
 ## `Kullanilacak API`:
 
-- https://newsapi.org/
+- https://newsapi.org/v2/everything?
 
 ## `Kullanilacak Araclar`
 
