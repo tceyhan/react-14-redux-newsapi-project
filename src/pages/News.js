@@ -11,8 +11,9 @@ import { useState } from "react";
 
 const News = () => {
   const [data, setData] = useState([]);
-  var url =
-    "https://newsapi.org/v2/everything?q=bitcoin&apiKey=d00d9a4dc6a7453bb673086906f424c2";
+
+  var url ="https://newsapi.org/v2/everything?q=bitcoin&apiKey=d00d9a4dc6a7453bb673086906f424c2";
+  
   const getNews = async () => {
     const { data } = await axios.get(url);
     console.log(data.articles);
@@ -21,8 +22,10 @@ const News = () => {
   };
 
   useEffect(() => {
-    getNews();
+    getNews();    
   }, [url]);
+
+ 
   
 
   console.log(data);
