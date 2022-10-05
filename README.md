@@ -1,4 +1,6 @@
 # Redux Nedir, Nasil Uygulanir Projesi
+# react-14-redux-newsapi-project.netlify.app
+
 - ![Proje](./media/newapi_project_view.png)
 ## `Kurulum`
 
