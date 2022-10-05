@@ -22,7 +22,7 @@ const News = () => {
 
   useEffect(() => {
     getNews();
-  }, []);
+  }, [url]);
   
 
   console.log(data);
